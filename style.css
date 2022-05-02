@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;700&family=Montserrat:wght@500&family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap");
+
+:root {
+  --color-heading: #527dff;
+  --color-hover: #003fff;
+  --color-visited: #00bfff;
+  --color-edit: #25a2a2;
+  --color-header-bg: #f6f8ff;
+  --color-body-bg: #fff;
+  --font-primary: "Space Mono", monospace;
+  --font-secondary: "Inconsolata", monospace;
+
+  --game-color-primary: #f2bb13;
+  --game-color-secondary: #00cccc;
+  --game-color-accent: #f34f29;
+  --game-color-body-font: #f4f4f4;
+
+  --game-color-dark: #1e1f26;
+  --game-color-dgray: #3e3f45;
+  --game-color-lgray: #85868a;
+  --game-color-light: #e1e0d9;
+  --game-font-brand: "Righteous", cursive;
+  --game-font-accent: "Inconsolata", monospace;
+  --game-font-secondary: "Montserrat Alternates", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-primary);
+  font-size: 14px;
+  display: block;
+  background-color: var(--color-body-bg);
+  color: var(--game-color-lgray);
+}
+
+header {
+  background-color: var(--color-header-bg);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.sections {
+  padding: 20px;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: var(--color-heading);
+  font-size: 3em;
+  padding: 30px;
+}
+
+h2 {
+  font-size: 2em;
+  padding: 30px;
+  color: var(--color-heading);
+}
+
+h3 {
+  font-size: 1.7em;
+}
+
+h5 {
+  color: var(--color-heading);
+  padding: 20px 40px;
+}
+
+p {
+  font-size: 1em;
+  padding: 30px;
+  transform-style: preserve-3d;
+  transform: perspective(800px);
+  /*transition: all 0.3s ease;*/
+}
+
+h1:hover {
+  color: var(--color-hover);
+}
+
+h2:hover {
+  color: var(--color-hover);
+}
+
+.top {
+  padding-top: 40px;
+  font-weight: bold;
+  color: var(--color-heading);
+}
+
+a {
+  text-decoration: none;
+  margin-left: 40px;
+  padding: 5px;
+  font-size: 1.2em;
+  font-family: var(--font-secondary);
+}
+
+a:visited {
+  color: var(--color-heading);
+}
+
+/* Colors  */
+
+.container {
+  display: block;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.swatch {
+  width: 150px;
+  height: 80px;
+  display: inline-block;
+  border-radius: 3px;
+  margin: 0 1em 1em 0;
+  text-align: center;
+  line-height: 80px;
+  font-size: 14px;
+  cursor: pointer;
+  color: var(--color-body-bg);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.swatch:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.primary {
+  background-color: var(--game-color-primary);
+}
+
+.secondary {
+  background-color: var(--game-color-secondary);
+}
+
+.accent {
+  background-color: var(--game-color-accent);
+}
+
+
+.body-font {
+  background-color: var(--game-color-body-font);
+  color: var(--game-color-lgray);
+}
+
+.dark {
+  background-color: var(--game-color-dark);
+}
+
+.dgray {
+  background-color: var(--game-color-dgray);
+}
+
+.lgray {
+  background-color: var(--game-color-lgray);
+}
+
+.light {
+  background-color: var(--game-color-light);
+  color: var(--game-color-lgray);
+}
+
+/* Typography */
+.card {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-color: var(--game-color-dgray);
+  color: var(--game-color-light);
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.game-font-brand {
+  font-family: var(--game-font-brand);
+  letter-spacing: 3px;
+  color: var(--game-color-primary);
+}
+
+.game-font-brand:hover {
+  color: var(--game-color-secondary);
+}
+
+.game-font-accent {
+  font-family: var(--game-font-accent);
+  color: var(--game-color-secondary);
+}
+
+.game-font-accent:hover {
+  color: var(--game-color-body-font);
+}
+
+.game-font-secondary {
+  font-family: var(--game-font-secondary);
+  color: var(--game-color-light);
+  font-size: 1.2em;
+  padding: 0 43px 40px 30px;
+}
+
+.game-font-secondary:hover {
+  color: var(--game-color-body-font);
+}
+
+/* Buttons  */
+
+.buttons,
+.icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin: auto;
+}
+
+button {
+  width: 13em;
+  padding: 18px;
+  border: none;
+  margin: 20px;
+  cursor: pointer;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-family: var(--game-font-secondary);
+  transition: transform 0.7s ease;
+  font-weight: bold;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  -ms-transform: scale(1.2);
+  /* IE 9 */
+  -webkit-transform: scale(1.2);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
+.dark-card {
+  background-color: var(--game-color-dgray);
+  margin: 15px;
+  padding: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.light-card {
+  background-color: var(--game-color-light);
+  margin: 15px;
+  padding: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.register,
+.login,
+.start {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-button-register {
+  background-color: var(--game-color-primary);
+  color: var(--color-body-bg);
+}
+
+.game-button-register:hover {
+  background-color: var(--game-color-body-font);
+  color: var(--game-color-primary);
+  border: 2px solid var(--game-color-primary);
+}
+
+.game-button-register-hover {
+  background-color: var(--game-color-body-font);
+  color: var(--game-color-primary);
+  border: 2px solid var(--game-color-primary);
+}
+
+.game-button-login {
+  background-color: var(--game-color-secondary);
+  color: var(--color-body-bg);
+}
+
+.game-button-login:hover {
+  background-color: var(--game-color-body-font);
+  color: var(--game-color-secondary);
+  border: 2px solid var(--game-color-secondary);
+}
+
+.game-button-login-hover {
+  background-color: var(--game-color-body-font);
+  color: var(--game-color-secondary);
+  border: 2px solid var(--game-color-secondary);
+}
+
+.game-button-start {
+  background-color: var(--game-color-accent);
+  color: var(--color-body-bg);
+}
+
+.game-button-start:hover {
+  background-color: var(--game-color-body-font);
+  color: var(--game-color-accent);
+  border: 2px solid var(--game-color-accent);
+}
+
+.game-button-start-hover {
+  background-color: var(--game-color-body-font);
+  color: var(--game-color-accent);
+  border: 2px solid var(--game-color-accent);
+}
+
+/* Icons */
+.icons-box {
+  display: flex;
+
+}
+
+.icons {
+  padding: 40px;
+  flex-wrap: wrap;
+  width: 70%;
+  background-color: var(--game-color-dgray);
+  margin: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.icons-light {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin: auto;
+  padding: 40px;
+  flex-wrap: wrap;
+  width: 70%;
+  background-color: var(--game-color-body-font);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.fas,
+.fab,
+.far {
+  padding: 20px;
+  font-size: 2vw;
+  color: var(--game-color-light);
+  transition: transform 0.7s ease;
+  text-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.fas:hover {
+  -ms-transform: scale(1.2);
+  /* IE 9 */
+  -webkit-transform: scale(1.2);
+  /* Safari 3-8 */
+  transform: scale(1.2);
+  color: var(--game-color-secondary);
+}
+
+.fab:hover {
+  -ms-transform: scale(1.2);
+  /* IE 9 */
+  -webkit-transform: scale(1.2);
+  /* Safari 3-8 */
+  transform: scale(1.2);
+  color: var(--game-color-primary);
+}
+
+.far:hover {
+  -ms-transform: scale(1.2);
+  /* IE 9 */
+  -webkit-transform: scale(1.2);
+  /* Safari 3-8 */
+  transform: scale(1.2);
+  color: var(--game-color-primary);
+}
+
+.fa-angles-up {
+  color: var(--game-color-accent);
+}
+
+.ilight {
+  color: var(--game-color-secondary);
+}
+
+.ilight:hover {
+  color: var(--game-color-primary);
+}
+
+/* Footer  */
+
+footer {
+  background-color: var(--color-header-bg);
+  height: 50px;
+}
