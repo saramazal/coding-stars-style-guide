@@ -42,6 +42,7 @@ body {
   background-color: var(--color-body-bg);
   color: var(--game-color-lgray);
 }
+
 .main {
   max-width: 800px;
   margin: auto;
@@ -184,7 +185,7 @@ a:visited {
 
 /* Typography */
 .card {
-   display: flex;
+  display: flex;
   flex-direction: column;
   margin: auto;
   padding: 10px;
@@ -221,7 +222,7 @@ a:visited {
   font-family: var(--game-font-secondary);
   color: var(--game-color-light);
   font-size: 1.2em;
-  
+
 }
 
 .game-font-secondary:hover {
@@ -341,15 +342,17 @@ button:hover {
 /* Icons */
 .icons-box {
   display: flex;
-margin: auto;
-justify-content: center;
-align-items: center;
+  margin: auto;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .icons {
-  padding: 30px;
+  padding: 10px;
   flex-wrap: wrap;
-  width: 70%;
   background-color: var(--game-color-dgray);
   margin: 20px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
@@ -357,15 +360,10 @@ align-items: center;
 }
 
 .icons-light {
-  display: flex;
+  padding: 10px;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
-  margin: auto;
-  padding: 30px;
-  flex-wrap: wrap;
-  width: 70%;
+  margin: 20px;
   background-color: var(--game-color-body-font);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -425,4 +423,11 @@ align-items: center;
 footer {
   background-color: var(--color-header-bg);
   height: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .icons-box {
+    flex-direction: column;
+  }
 }
