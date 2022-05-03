@@ -361,8 +361,11 @@ button:hover {
 
 .icons-light {
   padding: 10px;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin: 20px;
   background-color: var(--game-color-body-font);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
