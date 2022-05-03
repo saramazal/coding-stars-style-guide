@@ -44,7 +44,7 @@ body {
 }
 
 .main {
-  max-width: 800px;
+  max-width: 80%;
   margin: auto;
 }
 
@@ -125,6 +125,9 @@ a:visited {
 
 .container {
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   margin: 0 auto;
   max-width: 700px;
 }
@@ -347,7 +350,7 @@ button:hover {
   align-items: stretch;
   align-content: center;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .icons {
@@ -429,8 +432,11 @@ footer {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
   .icons-box {
     flex-direction: column;
+  }
+  .main {
+    width: 100vw;
   }
 }
