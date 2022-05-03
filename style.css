@@ -245,8 +245,8 @@ a:visited {
 }
 
 button {
-  width: 13em;
-  padding: 18px;
+  width: 8em;
+  padding: 12px;
   border: none;
   margin: 20px;
   cursor: pointer;
@@ -275,6 +275,7 @@ button:hover {
 }
 
 .light-card {
+  margin-top: 15px;
   background-color: var(--game-color-light);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
