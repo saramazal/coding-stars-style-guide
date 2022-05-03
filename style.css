@@ -253,7 +253,7 @@ button {
   border: none;
   margin: 12px;
   cursor: pointer;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-weight: bold;
   font-family: var(--game-font-secondary);
   transition: transform 0.7s ease;
@@ -291,53 +291,55 @@ button:hover {
 }
 
 .game-button-register {
+  background-color: inherit;
+  color: var(--game-color-primary);
+  border: 2px solid var(--game-color-primary);
+}
+
+.game-button-register:hover {
+  background-color: var(--game-color-primary);
+  color: var(--color-body-bg);
+  
+}
+
+.game-button-register-hover {
   background-color: var(--game-color-primary);
   color: var(--color-body-bg);
 }
 
-.game-button-register:hover {
-  background-color: var(--game-color-body-font);
-  color: var(--game-color-primary);
-  border: 2px solid var(--game-color-primary);
-}
-
-.game-button-register-hover {
-  background-color: var(--game-color-body-font);
-  color: var(--game-color-primary);
-  border: 2px solid var(--game-color-primary);
-}
-
 .game-button-login {
-  background-color: var(--game-color-secondary);
-  color: var(--color-body-bg);
+  background-color: inherit;
+  color: var(--game-color-secondary);
+  border: 2px solid  var(--game-color-secondary);
 }
 
 .game-button-login:hover {
-  background-color: var(--game-color-body-font);
-  color: var(--game-color-secondary);
+  background-color: var(--game-color-secondary);
+  color: var(--color-body-bg);
   border: 2px solid var(--game-color-secondary);
 }
 
 .game-button-login-hover {
-  background-color: var(--game-color-body-font);
-  color: var(--game-color-secondary);
+  background-color: var(--game-color-secondary);
+  color: var(--color-body-bg);
   border: 2px solid var(--game-color-secondary);
 }
 
 .game-button-start {
-  background-color: var(--game-color-accent);
-  color: var(--color-body-bg);
-}
-
-.game-button-start:hover {
-  background-color: var(--game-color-body-font);
+  background-color: inherit;
   color: var(--game-color-accent);
   border: 2px solid var(--game-color-accent);
 }
 
+.game-button-start:hover {
+  background-color: var(--game-color-accent);
+  color: var(--color-body-bg);
+  border: 2px solid var(--game-color-accent);
+}
+
 .game-button-start-hover {
-  background-color: var(--game-color-body-font);
-  color: var(--game-color-accent);
+  background-color: var(--game-color-accent);
+  color: var(--color-body-bg);
   border: 2px solid var(--game-color-accent);
 }
 
