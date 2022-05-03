@@ -197,6 +197,9 @@ a:visited {
   background-color: var(--game-color-dgray);
   color: var(--game-color-light);
 }
+.card-one {
+  margin: 50px;
+}
 
 .card:hover {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
